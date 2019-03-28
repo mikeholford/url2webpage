@@ -20,9 +20,10 @@
       }
       
       // Set values
-      document.getElementById("heading").innerHTML = getUrlVars()["heading"];
-      document.getElementById("subheading").innerHTML = getUrlVars()["subheading"];
-      document.getElementById("description").innerHTML = getUrlVars()["description"];
+      document.getElementById("heading").innerHTML = (getUrlVars()["heading"]).replace(/%20/g, ' ');
+      document.getElementById("subheading").innerHTML = (getUrlVars()["subheading"]).replace(/%20/g, ' ');
+      document.getElementById("description").innerHTML = (getUrlVars()["description"]).replace(/%20/g, ' ');
+      
     </script>
 
   </body>
